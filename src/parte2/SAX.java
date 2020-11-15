@@ -16,7 +16,9 @@ import org.xml.sax.SAXException;
  */
 public class SAX {
 
-    public void parseXML() throws ParserConfigurationException, UnsupportedEncodingException, SAXException, IOException {
+    public void parseXML() 
+            throws ParserConfigurationException, UnsupportedEncodingException, SAXException, IOException {
+       File file = new File("libros.xml");
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
 
